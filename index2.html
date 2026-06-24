@@ -1,64 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
-    <title>CopaDoMundo 2026 - 2ª Fase</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
+
+<title>Copa do Mundo 2026 - 2ª Fase</title>
 </head>
+
 <body>
-    <h1>Copa do Mundo 2026 - 2ª FASE</h1>
-    <button id="btn-primeira-fase" class="buttom">⚽ 1ª FASE</button>
 
-    <div class="copa-container">
+<h1>Copa do Mundo 2026 - 2ª FASE</h1>
 
-        <!-- OITAVAS DE FINAL -->
-        <div class="grupo-card">
-            <div class="grupo-titulo">Oitavas de Final</div>
+<button id="btn-primeira-fase" class="buttom">⚽ 1ª FASE</button>
 
-            <div class="organization"><h2><span class="bandeira fi fi-mx"></span> México <span>×</span> <span class="bandeira fi fi-kr"></span> Coreia do Sul</h2></div>
-            <div class="organization"><h2><span class="bandeira fi fi-ca"></span> Canadá <span>×</span> <span class="bandeira fi fi-ch"></span> Suíça</h2></div>
-            <div class="organization"><h2><span class="bandeira fi fi-br"></span> Brasil <span>×</span> <span class="bandeira fi fi-ma"></span> Marrocos</h2></div>
-            <div class="organization"><h2><span class="bandeira fi fi-us"></span> EUA <span>×</span> <span class="bandeira fi fi-au"></span> Austrália</h2></div>
-            <div class="organization"><h2><span class="bandeira fi fi-es"></span> Espanha <span>×</span> <span class="bandeira fi fi-jp"></span> Japão</h2></div>
-            <div class="organization"><h2><span class="bandeira fi fi-de"></span> Alemanha <span>×</span> <span class="bandeira fi fi-nl"></span> Países Baixos</h2></div>
-            <div class="organization"><h2><span class="bandeira fi fi-fr"></span> França <span>×</span> <span class="bandeira fi fi-no"></span> Noruega</h2></div>
-            <div class="organization"><h2><span class="bandeira fi fi-ar"></span> Argentina <span>×</span> <span class="bandeira fi fi-pt"></span> Portugal</h2></div>
-        </div>
+<div class="copa-container">
 
-        <!-- QUARTAS DE FINAL -->
-        <div class="grupo-card">
-            <div class="grupo-titulo">Quartas de Final</div>
+    <!-- OITAVAS -->
+    <div class="grupo-card">
+        <div class="grupo-titulo">Oitavas de Final</div>
 
-            <div class="organization"><h2><span class="bandeira fi" id="q1-casa"></span> ? <span>×</span> <span class="bandeira fi" id="q1-fora"></span> ?</h2></div>
-            <div class="organization"><h2><span class="bandeira fi" id="q2-casa"></span> ? <span>×</span> <span class="bandeira fi" id="q2-fora"></span> ?</h2></div>
-            <div class="organization"><h2><span class="bandeira fi" id="q3-casa"></span> ? <span>×</span> <span class="bandeira fi" id="q3-fora"></span> ?</h2></div>
-            <div class="organization"><h2><span class="bandeira fi" id="q4-casa"></span> ? <span>×</span> <span class="bandeira fi" id="q4-fora"></span> ?</h2></div>
-        </div>
-
-        <!-- SEMIFINAIS -->
-        <div class="grupo-card">
-            <div class="grupo-titulo">Semifinais</div>
-
-            <div class="organization"><h2><span class="bandeira fi" id="s1-casa"></span> ? <span>×</span> <span class="bandeira fi" id="s1-fora"></span> ?</h2></div>
-            <div class="organization"><h2><span class="bandeira fi" id="s2-casa"></span> ? <span>×</span> <span class="bandeira fi" id="s2-fora"></span> ?</h2></div>
-        </div>
-
-        <!-- FINAL -->
-        <div class="grupo-card">
-            <div class="grupo-titulo">Final</div>
-
-            <div class="organization"><h2><span class="bandeira fi" id="f-casa"></span> ? <span>×</span> <span class="bandeira fi" id="f-fora"></span> ?</h2></div>
-
-            <div class="selecao" style="justify-content:center; margin-top:16px; font-size:1.3rem;">
-                🏆 <span style="margin-left:10px">Campeão: A definir</span>
-            </div>
-        </div>
-
+        <div class="organization"><h2><span class="fi fi-mx bandeira"></span> × <span class="fi fi-kr bandeira"></span></h2></div>
+        <div class="organization"><h2><span class="fi fi-ca bandeira"></span> × <span class="fi fi-ch bandeira"></span></h2></div>
+        <div class="organization"><h2><span class="fi fi-br bandeira"></span> × <span class="fi fi-ma bandeira"></span></h2></div>
+        <div class="organization"><h2><span class="fi fi-us bandeira"></span> × <span class="fi fi-au bandeira"></span></h2></div>
+        <div class="organization"><h2><span class="fi fi-es bandeira"></span> × <span class="fi fi-jp bandeira"></span></h2></div>
+        <div class="organization"><h2><span class="fi fi-de bandeira"></span> × <span class="fi fi-nl bandeira"></span></h2></div>
+        <div class="organization"><h2><span class="fi fi-fr bandeira"></span> × <span class="fi fi-no bandeira"></span></h2></div>
+        <div class="organization"><h2><span class="fi fi-ar bandeira"></span> × <span class="fi fi-pt bandeira"></span></h2></div>
     </div>
 
-    <script src="js.js"></script>
+    <!-- QUARTAS -->
+    <div class="grupo-card">
+        <div class="grupo-titulo">Quartas de Final</div>
+
+        <div class="organization"><h2><span id="q1-casa" class="fi bandeira"></span> × <span id="q1-fora" class="fi bandeira"></span></h2></div>
+        <div class="organization"><h2><span id="q2-casa" class="fi bandeira"></span> × <span id="q2-fora" class="fi bandeira"></span></h2></div>
+        <div class="organization"><h2><span id="q3-casa" class="fi bandeira"></span> × <span id="q3-fora" class="fi bandeira"></span></h2></div>
+        <div class="organization"><h2><span id="q4-casa" class="fi bandeira"></span> × <span id="q4-fora" class="fi bandeira"></span></h2></div>
+
+        <details class="details">
+            <summary>RESULTADOS</summary>
+            <div class="info-jogo">Q1: ? x ?</div>
+            <div class="info-jogo">Q2: ? x ?</div>
+            <div class="info-jogo">Q3: ? x ?</div>
+            <div class="info-jogo">Q4: ? x ?</div>
+        </details>
+    </div>
+
+    <!-- SEMIFINAIS -->
+    <div class="grupo-card">
+        <div class="grupo-titulo">Semifinais</div>
+
+        <div class="organization"><h2><span id="s1-casa" class="fi bandeira"></span> × <span id="s1-fora" class="fi bandeira"></span></h2></div>
+        <div class="organization"><h2><span id="s2-casa" class="fi bandeira"></span> × <span id="s2-fora" class="fi bandeira"></span></h2></div>
+
+        <details class="details">
+            <summary>RESULTADOS</summary>
+            <div class="info-jogo">Semi 1: ? x ?</div>
+            <div class="info-jogo">Semi 2: ? x ?</div>
+        </details>
+    </div>
+
+    <!-- FINAL -->
+    <div class="grupo-card">
+        <div class="grupo-titulo">Final</div>
+
+        <div class="organization">
+            <h2>
+                <span id="f-casa" class="fi bandeira"></span> ×
+                <span id="f-fora" class="fi bandeira"></span>
+            </h2>
+        </div>
+
+        <div class="selecao" style="justify-content:center; margin-top:20px; font-size:1.4rem;">
+        </div>
+        <details class="details">
+            <summary>RESULTADOS</summary>
+            <div class="info-jogo">🏆CAMPEÂO!<span id="fi bandeira"></span>🏆</div>
+        </details>
+    </div>
+</div>
+
+<script src="js.js"></script>
 
 </body>
 </html>
